@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+#productsAdmin {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#productsAdmin {
+    .product-page-wrapper {
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .add-new-button {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #5cb85c;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .product-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .product-table th,
+    .product-table td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .product-table th {
+        background-color: #f9f9f9;
+    }
+
+    .pagination-footer {
+        margin-top: 20px;
+        text-align: center;
+        /* Pagination styles */
+    }
+
+    .product-table img {
+        width: 50px;
+        /* or any size that fits your layout */
+        height: auto;
+    }
+
+    /* Adjusted Modal Content Styles */
+    .modal-content {
+        background-color: #34495e;
+        /* Dark blue background */
+        color: white;
+        /* Text color */
+        padding: 30px;
+        /* Padding inside the modal */
+        border: 1px solid #888;
+        width: 50%;
+        /* Width of the modal */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        /* Rounded corners */
+        position: fixed;
+        /* Changed from relative to fixed */
+        top: 50%;
+        /* Position the top edge of the modal in the middle of the screen */
+        left: 50%;
+        /* Center the modal */
+        transform: translate(-50%, -50%);
+        /* Offset the modal to truly center it */
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align form fields to the start */
+
+    }
+
+    .modal-content button[type="submit"] {
+        background-color: white;
+        /* Change the color to a different shade */
+        color: black;
+        padding: 8px;
+        /* Increase padding to make the button bigger */
+        font-size: 1.2em;
+        /* Make the font size larger */
+        /* font-weight: bold; Make the font weight bold */
+        border: none;
+        border-radius: 3px;
+        /* Slightly rounded borders for the button */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        /* Smooth transition for hover effect */
+    }
+
+    .modal-content button[type="submit"]:hover {
+        background-color: white;
+        /* Darker shade on hover */
+    }
+
+    #addProductForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+        column-gap: 20px;
+        /* Space between columns */
+        row-gap: 10px;
+        /* Space between rows */
+        width: 100%;
+    }
+
+    /* Input and label styles */
+    #addProductForm label,
+    #addProductForm input,
+    #addProductForm button {
+        width: 100%;
+        /* Full width of the grid column */
+    }
+
+    /* Button should span across both columns */
+    #addProductForm button {
+        grid-column: span 2;
+        /* Span button across two columns */
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+        #addProductForm {
+            grid-template-columns: 1fr;
+            /* One column on smaller screens */
+        }
+
+        #addProductForm button {
+            grid-column: span 1;
+            /* Button should only span one column */
+        }
+    }
+
+    .close {
+        color: #ccc;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Further responsive adjustments for very small screens */
+    @media screen and (max-width: 480px) {
+        .modal-content {
+            width: 95%;
+            /* Full width on very small screens */
+        }
+    }
+
+}

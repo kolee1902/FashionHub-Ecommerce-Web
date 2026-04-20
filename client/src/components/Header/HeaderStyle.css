@@ -1,0 +1,84 @@
+.navbar .container-fluid .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-collapse ul {
+    gap: 20px !important;
+}
+
+.navbar-collapse ul li a {
+    font-size: 20px !important;
+    width: 130px;
+}
+
+.navbar .container-fluid a {
+    color: white !important;
+}
+
+/* .dropdown-menu li a {
+   color: black !important;
+} */
+
+.search-form {
+    margin-right: 20px;
+    width: 500px;
+}
+
+.search-form i {
+    color: white;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    gap: 0.1px !important;
+
+}
+
+.navbar-nav .nav-item {
+    width: 130px;
+}
+
+.navbar-nav .nav-item a {
+    text-align: center;
+    font-size: 15px;
+}
+
+.dropdown-menu-lg-end {
+    margin-top: 15px !important;
+}
+
+.navbar-nav .nav-item ul li a {
+    color: black !important;
+    text-align: left;
+}
+
+.space-s {
+    width: 0px !important;
+}
+
+#user-actions {
+    margin-right: 20px;
+}
+
+#shoppingCart {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+#shoppingCart i {
+    color: white;
+    font-size: 27px;
+}
+
+#shoppingCart i:hover {
+    transform: scale(1.3);
+    color: #F4CE14;
+    transition: 0.2s;
+}

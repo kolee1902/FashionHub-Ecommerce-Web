@@ -1,0 +1,209 @@
+#checkoutPage {
+    display: flex;
+    justify-content: center;
+}
+
+#checkoutPage .wrapper {
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family: "Arimo";
+    background-color: #F1D4E5;
+    -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    animation: slideUp 2000ms ease;
+}
+
+#applyDiscountBtn button {
+    height: 37px !important;
+    font-size: 16px !important;
+}
+
+
+#checkoutPage .discountCode {
+    width: 200px;
+    border-radius: 10px;
+    border: black 2px solid;
+    margin: 0px 10px;
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+#checkoutPage .container {
+    width: 65%;
+    padding: 5% 10%;
+}
+
+#checkoutPage h1 {
+    align-self: center;
+}
+
+#checkoutPage form {
+    width: 100%;
+}
+
+#checkoutPage form>* {
+    margin-top: 20px;
+}
+
+#checkoutPage input {
+    width: 100%;
+    min-height: 25px;
+    height: 30px;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    color: #8e2807;
+    border-radius: 4px;
+}
+
+#checkoutPage label {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #8e2807;
+}
+
+#checkoutPage h1 {
+    font-size: 30px;
+    line-height: 10px;
+    color: #493b76;
+    letter-spacing: 1px;
+}
+
+#checkoutPage .alertMessage {
+    font-weight: bold;
+    font-size: 16px;
+    color: #e74c3c;
+}
+
+#checkoutPage h1:nth-of-type(2) {
+    margin-top: 10%;
+}
+
+#checkoutPage .name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+#checkoutPage .name div {
+    width: 45%;
+}
+
+#checkoutPage .address-info,
+#checkoutPage .cc-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkoutPage .address-info div,
+#checkoutPage .cc-info div {
+    width: 30%;
+}
+
+#checkoutPage .cc-info div {
+    width: 45%;
+}
+
+#checkoutPage .btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkoutPage .btns button {
+    margin: 3px 0;
+    height: 60px;
+    width: 40%;
+    color: #cfc9e1;
+    background-color: #4a3b76;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#checkoutPage .btns button:hover {
+    animation-name: btn-hov;
+    animation-duration: 550ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn-hov {
+    100% {
+        background-color: #cfc9e1;
+        color: #4a3b76;
+        transform: scale(1.05)
+    }
+}
+
+#checkoutPage input:focus,
+#checkoutPage button:focus {
+    outline: none;
+}
+
+@media (max-width: 736px) {
+    #checkoutPage .wrapper {
+        width: 100%;
+    }
+
+    #checkoutPage .container {
+        width: 100%;
+    }
+
+    #checkoutPage .btns {
+        align-items: center;
+    }
+
+    #checkoutPage .btns button {
+        width: 50%;
+    }
+
+    #checkoutPage form h1 {
+        text-align: center;
+    }
+
+    #checkoutPage .name,
+    #checkoutPage .address-info,
+    #checkoutPage .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #checkoutPage .name div,
+    #checkoutPage .address-info div,
+    #checkoutPage .cc-info div {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+    }
+
+    #checkoutPage .street,
+    #checkoutPage .cc-num {
+        text-align: center;
+    }
+
+    #checkoutPage input {
+        margin: 5px 0;
+        min-height: 30px;
+    }
+}

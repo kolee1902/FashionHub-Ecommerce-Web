@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+#UsersAdmin {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#UsersAdmin {
+    .user-page-wrapper {
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .add-new-button {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #5cb85c;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .user-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .user-table th,
+    .user-table td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .user-table th {
+        background-color: #f9f9f9;
+    }
+
+    .pagination-footer {
+        margin-top: 20px;
+        text-align: center;
+        /* Pagination styles */
+    }
+
+    .user-table img {
+        width: 50px;
+        /* or any size that fits your layout */
+        height: auto;
+    }
+
+    .delete-user-button {
+        display: none;
+        /* Hide by default */
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #d9534f;
+        /* Red color for delete action */
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-weight: 600;
+        margin-top: 20px;
+        /* Add some space above the button */
+    }
+}

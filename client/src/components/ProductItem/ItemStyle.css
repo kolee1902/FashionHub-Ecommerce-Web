@@ -1,0 +1,8 @@
+.card .card-title {
+    height: fit-content;
+}
+
+.img-container img {
+    height: 350px;
+    object-fit: cover;
+}

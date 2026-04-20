@@ -1,0 +1,119 @@
+CREATE TABLE `webproject`.`user` (
+  `user_id` VARCHAR(100) NOT NULL,
+  `token_id` VARCHAR(255) NULL,
+  `username` VARCHAR(255) NULL,
+  `email` VARCHAR(255) NULL,
+  `password` VARCHAR(255) NULL,
+  `avatar` VARCHAR(255) NULL,
+  `date_of_birth` VARCHAR(255) NULL,
+  `tel` VARCHAR(255) NULL,
+  `role` VARCHAR(255) NULL,
+  `address` VARCHAR(255) NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`user_id`));
+
+
+ALTER TABLE `webproject`.`user` 
+CHANGE COLUMN `token_id` `token_id` VARCHAR(255) NOT NULL ,
+CHANGE COLUMN `username` `username` VARCHAR(255) NOT NULL ;
+
+
+CREATE TABLE `webproject`.`product_categories` (
+  `id` VARCHAR(255) NOT NULL,
+  `cat_name` VARCHAR(255) NOT NULL,
+  `created_by` VARCHAR(255) NOT NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+
+
+CREATE TABLE `webproject`.`product` (
+  `id` VARCHAR(255) NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `describe` VARCHAR(255) NULL,
+  `price` INT NOT NULL,
+  `inventory` INT NULL,
+  `cat_id` VARCHAR(255) NOT NULL,
+  `image` VARCHAR(255) NULL,
+  `brand` VARCHAR(255) NULL,
+  `status` TINYINT NULL,
+  `count_likes` INT NULL,
+  `created_by` VARCHAR(255) NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `webproject`.`payment` (
+  `id` VARCHAR(255) NOT NULL,
+  `order_no` VARCHAR(255) NULL,
+  `user_id` VARCHAR(255) NOT NULL,
+  `price` INT NOT NULL,
+  `discount` FLOAT NOT NULL,
+  `dicount_amount` INT NULL,
+  `total_amount` INT NULL,
+  `payment_method` VARCHAR(255) NULL,
+  `status` VARCHAR(255) NULL,
+  `discount_code` VARCHAR(255) NULL,
+  `payment_confirmation_date` VARCHAR(255) NULL,
+  `shipping_address` VARCHAR(255) NULL,
+  `notes` VARCHAR(255) NULL,
+  `created_at` DATETIME NOT NULL,
+  `updated_at` DATETIME NOT NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+
+ALTER TABLE `webproject`.`user` 
+ADD COLUMN `name` VARCHAR(255) NULL AFTER `username`;
+
+
+CREATE TABLE `webproject`.`cart` (
+  `id` VARCHAR(255) NOT NULL,
+  `user_id` VARCHAR(255) NOT NULL,
+  `total_quantity` INT NULL,
+  `total_price` INT NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`id`, `user_id`));
+
+
+  CREATE TABLE `webproject`.`cart_item` (
+  `id` VARCHAR(255) NOT NULL,
+  `cart_id` VARCHAR(255) NOT NULL,
+  `product_id` VARCHAR(255) NOT NULL,
+  `quantity` INT NULL,
+  `price` INT NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`id`, `cart_id`, `product_id`));
+
+
+CREATE TABLE `webproject`.`order` (
+  `id` VARCHAR(255) NOT NULL,
+  `user_id` VARCHAR(255) NULL,
+  `cart_id` VARCHAR(255) NULL,
+  `total_amount` INT NULL,
+  `status` TINYINT NULL,
+  `created_at` DATETIME NULL,
+  `updated_at` DATETIME NULL,
+  `deleted_at` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+
+
+ALTER TABLE `webproject`.`payment` 
+CHANGE COLUMN `price` `price` INT NULL ,
+CHANGE COLUMN `discount` `discount` FLOAT NULL ,
+CHANGE COLUMN `dicount_amount` `discount_amount` INT NULL DEFAULT NULL ;
+
+
+ALTER TABLE `webproject`.`order` 
+ADD COLUMN `order_no` VARCHAR(255) NULL AFTER `id`;

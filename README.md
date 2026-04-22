@@ -123,10 +123,20 @@ User → Browse Products → View Product Details → Add to Cart → Checkout �
 
 ---
 
-## 🚀 Future Improvements
+## ⚠️ Current Limitations
 
-* Add UI mockups or system diagrams
-* Expand test coverage
-* Automate testing for core workflows
+* The application is currently only runnable in a local environment (localhost)
+* No deployment or hosting solution has been implemented
+* Limited accessibility for external users and stakeholders
+* Some features may not be fully tested in a production-like environment
 
 ---
+
+## 🚀 Future Improvements
+
+* Deploy the application to a public hosting platform (e.g., Vercel, Render, or AWS)
+* Improve system accessibility for real users
+* Enhance testing coverage in a production environment
+* Implement better error handling and validation
+* Optimize user experience and interface design
+

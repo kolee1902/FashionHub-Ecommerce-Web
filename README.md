@@ -5,21 +5,38 @@
 FashionHub is an e-commerce web application designed for selling women's clothing. The platform allows users to browse products, view detailed information, and complete purchases through an online shopping experience.
 
 ---
-
 ## 👤 My Role
 
 * Business Analyst (BA)
-* Tester
+* Test Management
+* Contributed to Frontend Development and UI Design
+* Prepared project documentation and reports
+
+📌 Role Overview
+
+<img src="docs/images/my-role.png" width="700"/>
+
+This diagram summarizes my contributions across different aspects of the project, including analysis, testing, UI, and development support.
 
 ---
 
 ## 🧩 Key Responsibilities
 
-* Gathered and analyzed business requirements
-* Defined system use cases and user flows
-* Designed and executed test cases
-* Validated core functionalities of the system
-* Collaborated with developers to ensure alignment between requirements and implementation
+* Analyzed and clarified business requirements
+
+* Defined use cases and user flows for core system features
+
+* Designed and managed test cases and test execution
+
+* Led testing efforts and tracked test results
+
+* Contributed to frontend implementation (UI components)
+
+* Assisted in UI design for product-related pages
+
+* Prepared project documentation including test reports and plans
+
+* Collaborated with team members to ensure system quality and consistency
 
 ---
 

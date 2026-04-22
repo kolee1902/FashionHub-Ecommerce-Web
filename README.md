@@ -89,10 +89,7 @@ User → Browse Products → View Product Details → Add to Cart → Checkout �
 
 ## 📊 Test Summary
 
-| Feature          | Total | Passed | Failed |
-| ---------------- | ----- | ------ | ------ |
-| Search products  | 5     | 3      | 2      |
-| (Other features) | ...   | ...    | ...    |
+<img src="images/test-summary-repor.png" width="700"/>
 
 ### 🔍 Key Findings
 

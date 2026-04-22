@@ -14,7 +14,7 @@ FashionHub is an e-commerce web application designed for selling women's clothin
 
 📌 Role Overview
 
-<img src="docs/images/my-role.png" width="700"/>
+<img src="/images/my-role.png" width="700"/>
 
 This diagram summarizes my contributions across different aspects of the project, including analysis, testing, UI, and development support.
 
